@@ -7,7 +7,7 @@ export default function About() {
       <section className="bg-secondary  py-5">
         <div className="container py-5">
           <div  className="py-5">
-            <h1 className="text-center text-uppercase">about component</h1>
+            <h1 className="text-center text-uppercase fw-bold">about component</h1>
             <div className="row justify-content-center align-items-center  p-1">
              <div className="col-lg-6">
                <p className="">

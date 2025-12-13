@@ -6,7 +6,7 @@ export default function Portfolio() {
   return (
     <>
     <div className='container'>
-        <h1 className='text-center pt-3 text-capitalize'>portfolio component</h1>
+        <h1 className='text-center pt-3 text-capitalize fw-bold display-3'>portfolio component</h1>
         <div className='row g-3 py-5 rounded-3  '>
       <Card imgsrc="https://routeegy.github.io/startFramework/assets/images/poert1.png"/>
       <Card imgsrc="https://routeegy.github.io/startFramework/assets/images/port2.png"/>

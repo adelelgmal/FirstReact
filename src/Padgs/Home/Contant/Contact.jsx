@@ -56,9 +56,7 @@ export default function Contact() {
                   Contact Me
                 </h3>
 
-                <p className="text-muted mb-4">
-                  Send a message — I usually reply within 24–48 hours.
-                </p>
+               
 
                 {status.message && (
                   <div
@@ -140,12 +138,7 @@ export default function Contact() {
                       </div>
                     </div>
 
-                    <div className="col-12 d-flex justify-content-between align-items-center">
-                      <div>
-                        <small className="text-muted">
-                          We respect your privacy. Your data is never shared.
-                        </small>
-                      </div>
+                    <div className="col-12 ">
                       <div>
                         <button
                           type="submit"

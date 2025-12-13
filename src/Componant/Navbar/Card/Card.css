@@ -1,8 +1,5 @@
 /* Card Wrapper */
-.card-wrapper {
-  height: 100%;
-  perspective: 1000px;
-}
+
 
 .card-container {
   position: relative;
@@ -18,7 +15,7 @@
 
 .card-container:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+ 
 }
 
 /* Card Image */
@@ -33,7 +30,6 @@
   transform: scale(1.1);
 }
 
-/* Overlay */
 .card-overlay {
   position: absolute;
   top: 0;
@@ -58,159 +54,4 @@
   text-align: center;
   color: #fff;
   animation: slideIn 0.4s ease forwards;
-}
-
-.card-overlay:not(.active) .card-content {
-  animation: none;
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Card Title */
-.card-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #fff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-/* Card Description */
-.card-description {
-  font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 20px;
-  line-height: 1.5;
-}
-
-/* Card Icons */
-.card-icons {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 45px;
-  height: 45px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-}
-
-.icon-btn:hover {
-  background: #fff;
-  color: #667eea;
-  transform: scale(1.15) rotate(5deg);
-  border-color: #fff;
-}
-
-/* Plus Icon */
-.plus-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3.5rem;
-  color: rgba(255, 255, 255, 0.9);
-  opacity: 1;
-  transition: all 0.4s ease;
-  z-index: 1;
-  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.card-container:hover .plus-icon {
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(0.8) rotate(-90deg);
-}
-
-.plus-icon i {
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .card-container {
-    height: 300px;
-  }
-
-  .card-title {
-    font-size: 1.3rem;
-  }
-
-  .card-description {
-    font-size: 0.85rem;
-  }
-
-  .icon-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 1rem;
-  }
-
-  .plus-icon {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .card-container {
-    height: 250px;
-  }
-
-  .card-title {
-    font-size: 1.1rem;
-  }
-
-  .card-description {
-    font-size: 0.8rem;
-    margin-bottom: 15px;
-  }
-
-  .icon-btn {
-    width: 35px;
-    height: 35px;
-    font-size: 0.9rem;
-  }
-
-  .plus-icon {
-    font-size: 2.5rem;
-  }
-
-  .card-icons {
-    gap: 10px;
-  }
-}
-
-/* Animation on Load */
-@keyframes fadeInScale {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.card-wrapper {
-  animation: fadeInScale 0.5s ease-out;
 }
